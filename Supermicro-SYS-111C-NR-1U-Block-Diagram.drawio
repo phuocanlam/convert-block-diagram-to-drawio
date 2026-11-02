@@ -1,0 +1,1003 @@
+<mxfile host="app.diagrams.net" agent="Antigravity" version="24.7.17">
+  <diagram id="supermicro-sys-111c-nr" name="Supermicro SYS-111C-NR 1U Block Diagram">
+    <mxGraphModel dx="1650" dy="1100" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1650" pageHeight="1250" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ==================== TOP LEFT: DDR5 DIMM BANK (CHANNELS H, G, F, E) ==================== -->
+        <!-- Pair H (Outer Left) -->
+        <mxCell id="dimm_h0" value="#0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0000FF;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=4;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="30" width="42" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dimm_h1" value="DDR5 DIMM" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0000FF;strokeWidth=2;direction=north;fontSize=11;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="75" y="45" width="42" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dimm_h1_lbl" value="#1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="77" y="45" width="25" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Pair G -->
+        <mxCell id="dimm_g0" value="#0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0000FF;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=4;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="30" width="42" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dimm_g1" value="DDR5 DIMM" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0000FF;strokeWidth=2;direction=north;fontSize=11;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="45" width="42" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dimm_g1_lbl" value="#1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="162" y="45" width="25" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Pair F -->
+        <mxCell id="dimm_f0" value="#0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0000FF;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=4;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="30" width="42" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dimm_f1" value="DDR5 DIMM" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0000FF;strokeWidth=2;direction=north;fontSize=11;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="245" y="45" width="42" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dimm_f1_lbl" value="#1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="247" y="45" width="25" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Pair E (Inner Left, closest to CPU) -->
+        <mxCell id="dimm_e0" value="#0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0000FF;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=4;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="315" y="30" width="42" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dimm_e1" value="DDR5 DIMM" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0000FF;strokeWidth=2;direction=north;fontSize=11;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="45" width="42" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dimm_e1_lbl" value="#1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="332" y="45" width="25" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== TOP RIGHT: DDR5 DIMM BANK (CHANNELS A, B, C, D) ==================== -->
+        <!-- Pair A (Inner Right, closest to CPU) -->
+        <mxCell id="dimm_a0" value="#0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0000FF;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=18;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="715" y="30" width="42" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dimm_a1" value="DDR5 DIMM" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0000FF;strokeWidth=2;direction=north;fontSize=11;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="698" y="45" width="42" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dimm_a1_lbl" value="#1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="45" width="25" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Pair B -->
+        <mxCell id="dimm_b0" value="#0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0000FF;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=18;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="30" width="42" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dimm_b1" value="DDR5 DIMM" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0000FF;strokeWidth=2;direction=north;fontSize=11;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="783" y="45" width="42" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dimm_b1_lbl" value="#1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="785" y="45" width="25" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Pair C -->
+        <mxCell id="dimm_c0" value="#0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0000FF;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=18;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="885" y="30" width="42" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dimm_c1" value="DDR5 DIMM" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0000FF;strokeWidth=2;direction=north;fontSize=11;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="868" y="45" width="42" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dimm_c1_lbl" value="#1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="45" width="25" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Pair D (Outer Right) -->
+        <mxCell id="dimm_d0" value="#0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0000FF;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=18;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="970" y="30" width="42" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dimm_d1" value="DDR5 DIMM" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0000FF;strokeWidth=2;direction=north;fontSize=11;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="953" y="45" width="42" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dimm_d1_lbl" value="#1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="955" y="45" width="25" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== CENTER TOP: CPU & EDGE-ALIGNED SUB-BOXES ==================== -->
+        <mxCell id="cpu_main" value="CPU" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=16;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="415" y="45" width="240" height="475" as="geometry" />
+        </mxCell>
+
+        <!-- CPU Left DDR5 Sub-boxes -->
+        <mxCell id="cpu_ddr_e" value="CH E" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8EAF6;strokeColor=#0000FF;fontSize=10;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="415" y="55" width="45" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="cpu_ddr_f" value="CH F" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8EAF6;strokeColor=#0000FF;fontSize=10;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="415" y="83" width="45" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="cpu_ddr_g" value="CH G" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8EAF6;strokeColor=#0000FF;fontSize=10;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="415" y="111" width="45" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="cpu_ddr_h" value="CH H" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8EAF6;strokeColor=#0000FF;fontSize=10;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="415" y="139" width="45" height="22" as="geometry" />
+        </mxCell>
+
+        <!-- CPU Right DDR5 Sub-boxes -->
+        <mxCell id="cpu_ddr_a" value="CH A" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8EAF6;strokeColor=#0000FF;fontSize=10;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="610" y="55" width="45" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="cpu_ddr_b" value="CH B" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8EAF6;strokeColor=#0000FF;fontSize=10;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="610" y="83" width="45" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="cpu_ddr_c" value="CH C" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8EAF6;strokeColor=#0000FF;fontSize=10;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="610" y="111" width="45" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="cpu_ddr_d" value="CH D" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8EAF6;strokeColor=#0000FF;fontSize=10;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="610" y="139" width="45" height="22" as="geometry" />
+        </mxCell>
+
+        <!-- CPU Left PCIe Sub-boxes -->
+        <mxCell id="cpu_pe1_0_15" value="PE1[0-15]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontColor=#6A1B9A;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="415" y="185" width="75" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cpu_pe2_8_15" value="PE2[8-15]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontColor=#6A1B9A;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="415" y="240" width="75" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cpu_pe2_0_7" value="PE2[0-7]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontColor=#6A1B9A;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="415" y="295" width="75" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cpu_pe3_0_3" value="PE3[0-3]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontColor=#6A1B9A;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="415" y="345" width="75" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cpu_pe3_4_7" value="PE3[4-7]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontColor=#6A1B9A;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="415" y="382" width="75" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cpu_pe3_8_11" value="PE3[8-11]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontColor=#6A1B9A;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="415" y="419" width="75" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cpu_pe3_12_15" value="PE3[12-15]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontColor=#6A1B9A;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="415" y="456" width="75" height="26" as="geometry" />
+        </mxCell>
+
+        <!-- CPU Right PCIe Sub-boxes -->
+        <mxCell id="cpu_pe0_0_15" value="PE0[0-15]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontColor=#6A1B9A;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="185" width="75" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cpu_pe4_0_3" value="PE4[0-3]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontColor=#6A1B9A;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="295" width="75" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cpu_pe4_4_7" value="PE4[4-7]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontColor=#6A1B9A;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="332" width="75" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cpu_pe4_8_11" value="PE4[8-11]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontColor=#6A1B9A;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="369" width="75" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cpu_pe4_12_15" value="PE4[12-15]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontColor=#6A1B9A;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="406" width="75" height="26" as="geometry" />
+        </mxCell>
+
+        <!-- CPU Bottom DMI Sub-box -->
+        <mxCell id="cpu_dmi" value="DMI" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontColor=#000000;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="494" width="70" height="26" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== CPU LEFT PERIPHERAL CONNECTORS ==================== -->
+        <mxCell id="conn_luio2" value="LUIO2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="182" width="95" height="32" as="geometry" />
+        </mxCell>
+
+        <mxCell id="conn_jaiom1_top" value="JAIOM1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="237" width="95" height="32" as="geometry" />
+        </mxCell>
+
+        <mxCell id="conn_mcio_x8_left" value="MCIO x8" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="292" width="95" height="32" as="geometry" />
+        </mxCell>
+
+        <mxCell id="conn_jnvme1" value="MCIO x4" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="342" width="95" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="conn_jnvme2" value="MCIO x4" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="379" width="95" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="conn_jnvme3" value="MCIO x4" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="416" width="95" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="conn_jnvme4" value="MCIO x4" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="453" width="95" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== CPU RIGHT PERIPHERAL CONNECTORS ==================== -->
+        <mxCell id="conn_ruio2" value="RUIO2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="815" y="182" width="80" height="32" as="geometry" />
+        </mxCell>
+
+        <mxCell id="conn_jnvme5" value="MCIO x4" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="815" y="292" width="95" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="conn_jnvme6" value="MCIO x4" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="815" y="329" width="95" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="conn_jnvme7" value="MCIO x4" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="815" y="366" width="95" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="conn_jnvme8" value="MCIO x4" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="815" y="403" width="95" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== CENTER BOTTOM: PCH & EDGE-ALIGNED SUB-BOXES ==================== -->
+        <mxCell id="pch_main" value="PCH" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=16;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="415" y="580" width="240" height="480" as="geometry" />
+        </mxCell>
+
+        <!-- PCH Top DMI Sub-box -->
+        <mxCell id="pch_dmi" value="DMI" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontColor=#000000;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="580" width="70" height="26" as="geometry" />
+        </mxCell>
+
+        <!-- PCH Left Edge Sub-boxes (USB / SATA) -->
+        <mxCell id="pch_usb3_6_7" value="USB3[6:7]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;fontColor=#E65100;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="415" y="625" width="75" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pch_usb2_0_1" value="USB2[0:1]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;fontColor=#E65100;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="415" y="653" width="75" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pch_usb2_2_3" value="USB2[2:3]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;fontColor=#E65100;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="415" y="705" width="75" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pch_usb2_6" value="USB2[6]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;fontColor=#E65100;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="415" y="770" width="75" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pch_usb2_7" value="USB2[7]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;fontColor=#E65100;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="415" y="810" width="75" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pch_usb2_8_9" value="USB2[8:9]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;fontColor=#E65100;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="415" y="855" width="75" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pch_sata3_8_15" value="SATA3[8:15]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;fontColor=#E65100;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="415" y="905" width="80" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pch_sata3_16_19" value="SATA3[16:19]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;fontColor=#E65100;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="415" y="960" width="85" height="24" as="geometry" />
+        </mxCell>
+
+        <!-- PCH Right Edge Sub-boxes -->
+        <mxCell id="pch_usb2_4_5" value="USB2[4:5]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;fontColor=#E65100;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="620" width="75" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pch_pcie3_4" value="PCIe3[4]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;fontColor=#E65100;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="648" width="75" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pch_espi" value="ESPI" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;fontColor=#E65100;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="676" width="75" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pch_spi" value="SPI" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#1B5E20;fontColor=#1B5E20;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="730" width="75" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pch_pcie3_0_1" value="PCIe3[0-1]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;fontColor=#E65100;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="980" width="75" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="pch_pcie3_2_3" value="PCIe3[2-3]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;fontColor=#E65100;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="1025" width="75" height="24" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== PCH LEFT PERIPHERAL CONNECTORS ==================== -->
+        <mxCell id="conn_usb3_rear" value="USB3.0 x2&#xa;Rear" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=0;align=left;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="130" y="622" width="110" height="55" as="geometry" />
+        </mxCell>
+
+        <mxCell id="conn_usb2_hdr" value="USB2.0 x2&#xa;Header" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=0;align=left;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="130" y="692" width="110" height="48" as="geometry" />
+        </mxCell>
+
+        <mxCell id="conn_jaiom1_bot" value="JAIOM1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="766" width="110" height="32" as="geometry" />
+        </mxCell>
+
+        <mxCell id="conn_jaiom2_bot" value="JAIOM2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="806" width="110" height="32" as="geometry" />
+        </mxCell>
+
+        <mxCell id="conn_jfp2" value="JFP2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="851" width="110" height="32" as="geometry" />
+        </mxCell>
+
+        <mxCell id="conn_slimsas_x8" value="SlimSAS LP&#xa;x8" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=0;align=left;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="130" y="897" width="110" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="conn_slimsas_x4" value="SlimSAS LP&#xa;x4" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=0;align=left;spacingLeft=6;" vertex="1" parent="1">
+          <mxGeometry x="130" y="952" width="110" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== PCH BOTTOM-RIGHT M.2 CONNECTORS ==================== -->
+        <mxCell id="conn_m2_1" value="PCIe x2 M.2 M-Key" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="815" y="974" width="190" height="36" as="geometry" />
+        </mxCell>
+
+        <mxCell id="conn_m2_2" value="PCIe x2 M.2 M-Key" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="815" y="1019" width="190" height="36" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== MIDDLE RIGHT: BMC AST2600 & EDGE-ALIGNED SUB-BOXES ==================== -->
+        <mxCell id="bmc_main" value="BMC&#xa;AST2600" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="760" y="580" width="250" height="165" as="geometry" />
+        </mxCell>
+
+        <!-- BMC Left Edge Sub-boxes -->
+        <mxCell id="bmc_usb2" value="USB2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="760" y="620" width="50" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="bmc_pcie" value="PCIe" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="760" y="648" width="50" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="bmc_espi" value="ESPI" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="760" y="676" width="50" height="24" as="geometry" />
+        </mxCell>
+
+        <!-- BMC Top Edge Sub-boxes -->
+        <mxCell id="bmc_mac4" value="MAC4" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#0D47A1;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="775" y="580" width="55" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="bmc_mac3" value="MAC3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#0D47A1;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="845" y="580" width="55" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="bmc_emmc" value="eMMC" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#6A1B9A;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="580" width="55" height="24" as="geometry" />
+        </mxCell>
+
+        <!-- BMC Right Edge Sub-boxes -->
+        <mxCell id="bmc_vga_port" value="VGA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#333333;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="960" y="592" width="50" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="bmc_com1_port" value="COM1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#333333;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="960" y="625" width="50" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="bmc_mac1" value="MAC1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#333333;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="955" y="668" width="55" height="26" as="geometry" />
+        </mxCell>
+
+        <!-- BMC Bottom Edge Sub-boxes -->
+        <mxCell id="bmc_spi1" value="SPI1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#1B5E20;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="775" y="721" width="50" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="bmc_spi2" value="SPI2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EFEBE9;strokeColor=#4E342E;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="721" width="50" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="bmc_i2c" value="I2C" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#0D47A1;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="721" width="45" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="bmc_fwspi" value="FWSPI" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FCE4EC;strokeColor=#C2185B;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="721" width="55" height="24" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== BMC SURROUNDING PERIPHERALS ==================== -->
+        <!-- Above BMC: NCSI MUX, SW, eMMC, JNCSI1, JAIOM2, JAIOM1, MCIO x8 Upgrade Connectors -->
+        <mxCell id="ncsi_mux" value="MUX" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="985" y="450" width="80" height="32" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ncsi_sw" value="SW" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="985" y="495" width="80" height="32" as="geometry" />
+        </mxCell>
+
+        <mxCell id="bmc_emmc_dev" value="eMMC" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="985" y="540" width="80" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="conn_jncsi1" value="JNCSI1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1165" y="405" width="85" height="32" as="geometry" />
+        </mxCell>
+
+        <mxCell id="conn_jaiom2_mid" value="JAIOM2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1165" y="450" width="105" height="32" as="geometry" />
+        </mxCell>
+
+        <mxCell id="conn_jaiom1_mid" value="JAIOM1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1165" y="495" width="105" height="32" as="geometry" />
+        </mxCell>
+
+        <!-- Upgrade Connectors (MCIO x8) -->
+        <mxCell id="lbl_upg_top" value="Upgrade connector" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1315" y="332" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="conn_upg_mcio_top" value="MCIO x8" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="355" width="105" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="conn_upg_mcio_bot1" value="MCIO x8" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1165" y="565" width="105" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_upg_bot1" value="Upgrade connector" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1152" y="607" width="130" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="conn_upg_mcio_bot2" value="MCIO x8" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="565" width="105" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_upg_bot2" value="Upgrade connector" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1317" y="607" width="130" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Right of BMC: VGA, COM1, PHY, IPMI LAN -->
+        <mxCell id="conn_vga" value="VGA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="588" width="65" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="conn_com1" value="COM1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="623" width="65" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="phy_rtl8211f" value="PHY&#xa;RTL8211F" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="660" width="95" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ipmi_lan_chip" value="IPMI LAN&#xa;RTL8211F" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="660" width="95" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ipmi_lan_rj45" value="IPMI LAN&#xa;RJ45" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="660" width="95" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- Below BMC: TPM (PCH SPI), BMC BOOT FLASH, TPM (red), MUXes, BOOT FLASHes, CPLD -->
+        <mxCell id="tpm_pch" value="TPM" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="685" y="700" width="55" height="26" as="geometry" />
+        </mxCell>
+
+        <mxCell id="bmc_boot_flash" value="BMC BOOT FLASH" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="715" width="175" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="tpm_bmc" value="TPM" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#FF0000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="755" width="55" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="spi_mux_1" value="MUX" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="840" width="70" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="spi_mux_2" value="MUX" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="838" y="840" width="70" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="bios_boot_flash" value="BIOS BOOT FLASH" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="735" y="895" width="175" height="32" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cpld_boot_flash" value="CPLD BOOT FLASH" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=2.5;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="875" width="175" height="32" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== CPLD & EDGE-ALIGNED SUB-BOXES ==================== -->
+        <mxCell id="cpld_main" value="CPLD" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1115" y="810" width="150" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="cpld_i2c" value="I2C" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#0D47A1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1115" y="820" width="45" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="cpld_mux_ctrl" value="CTRL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EFEBE9;strokeColor=#4E342E;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1115" y="848" width="45" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="cpld_spi" value="SPI" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#1B5E20;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1115" y="920" width="45" height="22" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== NET ROUTING (EDGES) ==================== -->
+
+        <!-- 1. DDR5 Left Channels (E, F, G, H) -->
+        <mxCell id="net_ddr_e" value="E" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;strokeWidth=2;fontSize=11;fontStyle=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="372" y="66" as="sourcePoint" />
+            <mxPoint x="415" y="66" as="targetPoint" />
+            <mxPoint x="0" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="net_ddr_f" value="F" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;strokeWidth=2;fontSize=11;fontStyle=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="287" y="94" as="sourcePoint" />
+            <mxPoint x="415" y="94" as="targetPoint" />
+            <mxPoint x="-45" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="net_ddr_g" value="G" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;strokeWidth=2;fontSize=11;fontStyle=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="202" y="122" as="sourcePoint" />
+            <mxPoint x="415" y="122" as="targetPoint" />
+            <mxPoint x="-85" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="net_ddr_h" value="H" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;strokeWidth=2;fontSize=11;fontStyle=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="117" y="150" as="sourcePoint" />
+            <mxPoint x="415" y="150" as="targetPoint" />
+            <mxPoint x="-130" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 2. DDR5 Right Channels (A, B, C, D) -->
+        <mxCell id="net_ddr_a" value="A" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;strokeWidth=2;fontSize=11;fontStyle=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="655" y="66" as="sourcePoint" />
+            <mxPoint x="698" y="66" as="targetPoint" />
+            <mxPoint x="0" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="net_ddr_b" value="B" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;strokeWidth=2;fontSize=11;fontStyle=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="655" y="94" as="sourcePoint" />
+            <mxPoint x="783" y="94" as="targetPoint" />
+            <mxPoint x="45" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="net_ddr_c" value="C" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;strokeWidth=2;fontSize=11;fontStyle=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="655" y="122" as="sourcePoint" />
+            <mxPoint x="868" y="122" as="targetPoint" />
+            <mxPoint x="85" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="net_ddr_d" value="D" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;strokeWidth=2;fontSize=11;fontStyle=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="655" y="150" as="sourcePoint" />
+            <mxPoint x="953" y="150" as="targetPoint" />
+            <mxPoint x="130" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 3. CPU Left PCIe Links -->
+        <mxCell id="net_pe1_luio2" value="PCIe5.0 x16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#6A1B9A;strokeWidth=1.5;fontColor=#6A1B9A;fontSize=11;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="225" y="198" as="sourcePoint" />
+            <mxPoint x="415" y="198" as="targetPoint" />
+            <mxPoint x="0" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_pe2_8_15_jaiom1" value="PCIe5.0 x8&#xa;LANE REVERSAL" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#6A1B9A;strokeWidth=1.5;fontColor=#6A1B9A;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="225" y="253" as="sourcePoint" />
+            <mxPoint x="415" y="253" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_pe2_0_7_mcio" value="PCIe5.0 x8&#xa;LANE REVERSAL" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#6A1B9A;strokeWidth=1.5;fontColor=#6A1B9A;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="225" y="308" as="sourcePoint" />
+            <mxPoint x="415" y="308" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_jpcie1" value="JPCIE1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="228" y="309" width="50" height="18" as="geometry" />
+        </mxCell>
+
+        <mxCell id="net_pe3_0_3_nvme1" value="PCIe5.0 x4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#6A1B9A;strokeWidth=1.5;fontColor=#6A1B9A;fontSize=11;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="225" y="357" as="sourcePoint" />
+            <mxPoint x="415" y="357" as="targetPoint" />
+            <mxPoint x="0" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_jnvme1" value="JNVME1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="228" y="358" width="55" height="18" as="geometry" />
+        </mxCell>
+
+        <mxCell id="net_pe3_4_7_nvme2" value="PCIe5.0 x4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#6A1B9A;strokeWidth=1.5;fontColor=#6A1B9A;fontSize=11;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="225" y="394" as="sourcePoint" />
+            <mxPoint x="415" y="394" as="targetPoint" />
+            <mxPoint x="0" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_jnvme2" value="JNVME2" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="228" y="395" width="55" height="18" as="geometry" />
+        </mxCell>
+
+        <mxCell id="net_pe3_8_11_nvme3" value="PCIe5.0 x4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#6A1B9A;strokeWidth=1.5;fontColor=#6A1B9A;fontSize=11;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="225" y="431" as="sourcePoint" />
+            <mxPoint x="415" y="431" as="targetPoint" />
+            <mxPoint x="0" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_jnvme3" value="JNVME3" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="228" y="432" width="55" height="18" as="geometry" />
+        </mxCell>
+
+        <mxCell id="net_pe3_12_15_nvme4" value="PCIe5.0 x4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#6A1B9A;strokeWidth=1.5;fontColor=#6A1B9A;fontSize=11;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="225" y="468" as="sourcePoint" />
+            <mxPoint x="415" y="468" as="targetPoint" />
+            <mxPoint x="0" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_jnvme4" value="JNVME4" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="228" y="469" width="55" height="18" as="geometry" />
+        </mxCell>
+
+        <!-- 4. CPU Right PCIe Links -->
+        <mxCell id="net_pe0_ruio2" value="PCIe5.0 x16&#xa;LANE REVERSAL" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#6A1B9A;strokeWidth=1.5;fontColor=#6A1B9A;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="655" y="198" as="sourcePoint" />
+            <mxPoint x="815" y="198" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_pe4_0_3_nvme5" value="PCIe5.0 x4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#6A1B9A;strokeWidth=1.5;fontColor=#6A1B9A;fontSize=11;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="655" y="307" as="sourcePoint" />
+            <mxPoint x="815" y="307" as="targetPoint" />
+            <mxPoint x="0" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_jnvme5" value="JNVME5" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="755" y="308" width="55" height="18" as="geometry" />
+        </mxCell>
+
+        <mxCell id="net_pe4_4_7_nvme6" value="PCIe5.0 x4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#6A1B9A;strokeWidth=1.5;fontColor=#6A1B9A;fontSize=11;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="655" y="344" as="sourcePoint" />
+            <mxPoint x="815" y="344" as="targetPoint" />
+            <mxPoint x="0" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_jnvme6" value="JNVME6" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="755" y="345" width="55" height="18" as="geometry" />
+        </mxCell>
+
+        <mxCell id="net_pe4_8_11_nvme7" value="PCIe5.0 x4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#6A1B9A;strokeWidth=1.5;fontColor=#6A1B9A;fontSize=11;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="655" y="381" as="sourcePoint" />
+            <mxPoint x="815" y="381" as="targetPoint" />
+            <mxPoint x="0" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_jnvme7" value="JNVME7" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="755" y="382" width="55" height="18" as="geometry" />
+        </mxCell>
+
+        <mxCell id="net_pe4_12_15_nvme8" value="PCIe5.0 x4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#6A1B9A;strokeWidth=1.5;fontColor=#6A1B9A;fontSize=11;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="655" y="418" as="sourcePoint" />
+            <mxPoint x="815" y="418" as="targetPoint" />
+            <mxPoint x="0" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_jnvme8" value="JNVME8" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="755" y="419" width="55" height="18" as="geometry" />
+        </mxCell>
+
+        <!-- 5. CPU <-> PCH DMI Link -->
+        <mxCell id="net_cpu_pch_dmi" value="DMI3 x4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#6A1B9A;strokeWidth=2;fontColor=#6A1B9A;fontSize=11;fontStyle=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="535" y="520" as="sourcePoint" />
+            <mxPoint x="535" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 6. PCH Left Links (USB & SATA) -->
+        <mxCell id="net_pch_usb3_rear" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#E65100;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="637" as="sourcePoint" />
+            <mxPoint x="415" y="637" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="net_pch_usb2_rear" value="JUSBRJ45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#E65100;strokeWidth=1.5;fontColor=#000000;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="665" as="sourcePoint" />
+            <mxPoint x="415" y="665" as="targetPoint" />
+            <mxPoint x="-50" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_pch_usb2_hdr" value="JUSB1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#E65100;strokeWidth=1.5;fontColor=#000000;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="717" as="sourcePoint" />
+            <mxPoint x="415" y="717" as="targetPoint" />
+            <mxPoint x="-60" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_pch_usb2_6" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#E65100;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="782" as="sourcePoint" />
+            <mxPoint x="415" y="782" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_pch_usb2_7" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#E65100;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="822" as="sourcePoint" />
+            <mxPoint x="415" y="822" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_pch_usb2_8_9" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#E65100;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="867" as="sourcePoint" />
+            <mxPoint x="415" y="867" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_pch_sata_js1" value="JS1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#E65100;strokeWidth=1.5;fontColor=#000000;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="917" as="sourcePoint" />
+            <mxPoint x="415" y="917" as="targetPoint" />
+            <mxPoint x="-65" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_pch_sata_js2" value="JS2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#E65100;strokeWidth=1.5;fontColor=#000000;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="972" as="sourcePoint" />
+            <mxPoint x="415" y="972" as="targetPoint" />
+            <mxPoint x="-65" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 7. PCH <-> BMC Direct Links (USB2[4:5], PCIe3[4], ESPI) -->
+        <mxCell id="net_pch_bmc_usb2" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#E65100;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="655" y="632" as="sourcePoint" />
+            <mxPoint x="760" y="632" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="net_pch_bmc_pcie" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#E65100;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="655" y="660" as="sourcePoint" />
+            <mxPoint x="760" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="net_pch_bmc_espi" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#E65100;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="655" y="688" as="sourcePoint" />
+            <mxPoint x="760" y="688" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 8. PCH <-> M.2 M-Key Links -->
+        <mxCell id="net_pch_m2_1" value="PCIe3.0 x2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#E65100;strokeWidth=1.5;fontColor=#E65100;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="655" y="992" as="sourcePoint" />
+            <mxPoint x="815" y="992" as="targetPoint" />
+            <mxPoint x="0" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="net_pch_m2_2" value="PCIe3.0 x2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#E65100;strokeWidth=1.5;fontColor=#E65100;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="655" y="1037" as="sourcePoint" />
+            <mxPoint x="815" y="1037" as="targetPoint" />
+            <mxPoint x="0" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 9. BMC Top Links (MAC4 NCSI, MAC3 NCSI, eMMC) -->
+        <mxCell id="net_bmc_mac4_mux" value="NCSI" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#0D47A1;strokeWidth=1.5;fontColor=#0D47A1;fontSize=11;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="802" y="580" as="sourcePoint" />
+            <mxPoint x="985" y="466" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="802" y="466" />
+            </Array>
+            <mxPoint x="40" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_mux_jncsi1" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#0D47A1;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1025" y="450" as="sourcePoint" />
+            <mxPoint x="1165" y="421" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1025" y="421" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_mux_jaiom2" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#0D47A1;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1065" y="466" as="sourcePoint" />
+            <mxPoint x="1165" y="466" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_bmc_mac3_sw" value="NCSI" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#0D47A1;strokeWidth=1.5;fontColor=#0D47A1;fontSize=11;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="872" y="580" as="sourcePoint" />
+            <mxPoint x="985" y="511" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="872" y="511" />
+            </Array>
+            <mxPoint x="20" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_sw_jaiom1" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#0D47A1;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1065" y="511" as="sourcePoint" />
+            <mxPoint x="1165" y="511" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_bmc_emmc" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#6A1B9A;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="947" y="580" as="sourcePoint" />
+            <mxPoint x="985" y="555" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="947" y="555" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 10. JAIOM2 & JAIOM1 Upgrade Connector PCIe 5.0 x8 Links -->
+        <mxCell id="net_jaiom2_upg_top" value="JAIOM2_2&#xa;PCIe5.0 x8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#6A1B9A;strokeWidth=1.5;fontColor=#6A1B9A;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1270" y="458" as="sourcePoint" />
+            <mxPoint x="1382" y="395" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1382" y="458" />
+            </Array>
+            <mxPoint x="-35" y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_jaiom2_upg_bot2" value="PCIe5.0 x8&#xa;JAIOM2_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#6A1B9A;strokeWidth=1.5;fontColor=#6A1B9A;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1270" y="474" as="sourcePoint" />
+            <mxPoint x="1382" y="565" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1382" y="474" />
+            </Array>
+            <mxPoint x="-35" y="25" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_jaiom1_upg_bot1" value="PCIe5.0 x8&#xa;JAIOM1_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#6A1B9A;strokeWidth=1.5;fontColor=#6A1B9A;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1217" y="527" as="sourcePoint" />
+            <mxPoint x="1217" y="565" as="targetPoint" />
+            <mxPoint x="-35" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 11. BMC Right Links (VGA, COM1, MAC1 -> PHY -> IPMI LAN -> RJ45) -->
+        <mxCell id="net_bmc_vga" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=1;strokeColor=#000000;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1010" y="603" as="sourcePoint" />
+            <mxPoint x="1040" y="603" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_bmc_com1" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1010" y="636" as="sourcePoint" />
+            <mxPoint x="1040" y="636" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_bmc_phy" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1010" y="682" as="sourcePoint" />
+            <mxPoint x="1040" y="682" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_phy_ipmi_lan" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1135" y="682" as="sourcePoint" />
+            <mxPoint x="1170" y="682" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_ipmi_lan_rj45" value="JUSBRJ45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;strokeWidth=1.5;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1265" y="682" as="sourcePoint" />
+            <mxPoint x="1370" y="682" as="targetPoint" />
+            <mxPoint x="0" y="12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 12. PCH SPI, BMC SPI1, SPI2, I2C, FWSPI & CPLD Routing -->
+        <!-- PCH SPI -> TPM, MUX1, and CPLD -->
+        <mxCell id="net_pch_spi_mux1" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#1B5E20;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="655" y="742" as="sourcePoint" />
+            <mxPoint x="775" y="840" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="745" y="742" />
+              <mxPoint x="745" y="840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_pch_spi_tpm" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=oval;startFill=1;endArrow=classic;strokeColor=#1B5E20;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="712" y="742" as="sourcePoint" />
+            <mxPoint x="712" y="726" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_pch_spi_cpld" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=oval;startFill=1;endArrow=classic;strokeColor=#1B5E20;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="712" y="742" as="sourcePoint" />
+            <mxPoint x="1115" y="931" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="712" y="931" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- BMC SPI1 -> MUX1 -> BIOS BOOT FLASH -->
+        <mxCell id="net_bmc_spi1_mux1" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#1B5E20;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="745" as="sourcePoint" />
+            <mxPoint x="800" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_mux1_bios_flash" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#1B5E20;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="795" y="870" as="sourcePoint" />
+            <mxPoint x="795" y="895" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- BMC SPI2 -> MUX2 -> CPLD BOOT FLASH -->
+        <mxCell id="net_bmc_spi2_mux2" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#5D1916;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="865" y="745" as="sourcePoint" />
+            <mxPoint x="865" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_mux2_cpld_flash" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#5D1916;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="873" y="870" as="sourcePoint" />
+            <mxPoint x="920" y="891" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="873" y="891" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- CPLD CTRL -> MUX2 & MUX1 -->
+        <mxCell id="net_cpld_mux_ctrl" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=block;startFill=1;endArrow=none;strokeColor=#795548;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="908" y="855" as="sourcePoint" />
+            <mxPoint x="1115" y="855" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- BMC I2C -> CPLD I2C -->
+        <mxCell id="net_bmc_i2c_cpld" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#0D47A1;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="922" y="745" as="sourcePoint" />
+            <mxPoint x="1115" y="831" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="922" y="831" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- BMC FWSPI -> BMC BOOT FLASH & TPM (red) -->
+        <mxCell id="net_bmc_fwspi_tpm" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#E91E63;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="977" y="745" as="sourcePoint" />
+            <mxPoint x="1070" y="770" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="977" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_bmc_fwspi_flash" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=oval;startFill=1;endArrow=classic;strokeColor=#E91E63;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1030" y="770" as="sourcePoint" />
+            <mxPoint x="1070" y="730" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1030" y="730" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,589 @@
+<mxfile host="app.diagrams.net" agent="Antigravity" version="24.7.17">
+  <diagram id="cta-controller-module" name="CTA Controller Module System Overview">
+    <mxGraphModel dx="1422" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1280" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Outer System Frame -->
+        <mxCell id="outer_frame" value=" " style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F2F2F2;strokeColor=#333333;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="30" width="910" height="1170" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== TOP ROW PERIPHERALS ==================== -->
+        <mxCell id="eeprom" value="EEPROM" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCCCCC;strokeColor=#333333;fontStyle=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="85" y="50" width="90" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="temp_sensors" value="Temp&#xa;Sensors" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCCCCC;strokeColor=#333333;fontStyle=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="200" y="50" width="90" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="gpio_expander" value="GPIO&#xa;Expander" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCCCCC;strokeColor=#333333;fontStyle=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="355" y="50" width="90" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="psus" value="PSUs" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6B8AF;strokeColor=#333333;fontStyle=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="550" y="85" width="80" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="uart_header" value="UART&#xa;Header" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCCCCC;strokeColor=#333333;fontStyle=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="685" y="155" width="80" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== RIGHT COLUMN: B2B CONNECTOR ==================== -->
+        <mxCell id="b2b_connector" value="B2B&#xa;Connector" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCCCCC;strokeColor=#333333;fontStyle=0;fontSize=15;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="840" y="50" width="110" height="1010" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== CENTER TOP: RPi CM4/CM5 ==================== -->
+        <mxCell id="rpi_main" value="RPi&#xa;CM4/CM5" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B6D7A8;strokeColor=#666666;fontStyle=0;fontSize=16;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="360" y="190" width="280" height="240" as="geometry" />
+        </mxCell>
+
+        <!-- RPi CM4/CM5 Edge-Aligned Sub-boxes -->
+        <mxCell id="rpi_i2c0" value="I2C0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#B45F06;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="370" y="190" width="60" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rpi_emmc" value="eMMC" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#B45F06;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="365" y="225" width="60" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rpi_spi1" value="SPI1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#B45F06;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="360" y="295" width="60" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rpi_i2c1" value="I2C1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#B45F06;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="360" y="365" width="60" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rpi_pcie" value="PCIe" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#B45F06;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="385" y="405" width="65" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rpi_spi0" value="SPI0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#B45F06;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="475" y="405" width="65" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rpi_uart0" value="UART0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#B45F06;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="570" y="215" width="70" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rpi_uart3" value="UART3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#B45F06;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="570" y="245" width="70" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rpi_gbe" value="GbE" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#B45F06;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="570" y="280" width="70" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rpi_hdmi" value="HDMI" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#B45F06;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="570" y="315" width="70" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rpi_usb2" value="USB2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#B45F06;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="570" y="350" width="70" height="25" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rpi_usb3" value="USB3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#B45F06;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="570" y="385" width="70" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== LEFT COLUMN (UPPER): FAN, ADC, I2C HEADER ==================== -->
+        <mxCell id="fan1_header" value="Fan 1&#xa;Header" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCCCCC;strokeColor=#333333;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="85" y="140" width="80" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="fan2_header" value="Fan 2&#xa;Header" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCCCCC;strokeColor=#333333;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="85" y="210" width="80" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="fan_ctrl" value="Fan&#xa;CTRL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCCCCC;strokeColor=#333333;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="250" y="150" width="65" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="adc_psu" value="ADC&#xa;(PSU Monitor)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCCCCC;strokeColor=#333333;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="85" y="280" width="140" height="55" as="geometry" />
+        </mxCell>
+
+        <mxCell id="i2c_header" value="I2C&#xa;Header" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCCCCC;strokeColor=#333333;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="85" y="355" width="80" height="45" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== CENTER BOTTOM: KINTEX ULTRASCALE FPGA ==================== -->
+        <mxCell id="fpga_main" value="Kintex Ultrascale&#xa;FPGA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#B6D7A8;strokeColor=#666666;fontStyle=0;fontSize=16;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="360" y="550" width="280" height="520" as="geometry" />
+        </mxCell>
+
+        <!-- FPGA Top Edge Sub-boxes -->
+        <mxCell id="fpga_pcie_gen2" value="PCIe&#xa;Gen2&#xa;(Endpoint)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#B45F06;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="375" y="550" width="85" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="fpga_config" value="FPGA&#xa;Config" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#B45F06;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="470" y="550" width="75" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- FPGA Left Edge Sub-boxes -->
+        <mxCell id="fpga_pcie_gen3" value="PCIe&#xa;Gen3&#xa;(Endpoint)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#B45F06;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="360" y="615" width="85" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="fpga_ddr4_1" value="DDR4&#xa;MIG IP" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#B45F06;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="360" y="680" width="75" height="42" as="geometry" />
+        </mxCell>
+
+        <mxCell id="fpga_ddr4_2" value="DDR4&#xa;MIG IP" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#B45F06;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="360" y="732" width="75" height="42" as="geometry" />
+        </mxCell>
+
+        <mxCell id="fpga_jtag" value="JTAG" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#B45F06;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1005" width="60" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- FPGA Internal NIC Sub-box -->
+        <mxCell id="fpga_nic" value="NIC" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#B45F06;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="475" y="690" width="45" height="75" as="geometry" />
+        </mxCell>
+
+        <!-- FPGA Right Edge Sub-boxes -->
+        <mxCell id="fpga_pmic" value="PMIC&#xa;Emulation" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#B45F06;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="555" y="615" width="85" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="fpga_qspi_1" value="QSPI&#xa;Interface" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#B45F06;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="555" y="680" width="85" height="42" as="geometry" />
+        </mxCell>
+
+        <mxCell id="fpga_qspi_2" value="QSPI&#xa;Interface" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#B45F06;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="555" y="732" width="85" height="42" as="geometry" />
+        </mxCell>
+
+        <mxCell id="fpga_gth" value="GTH&#xa;Transceiver" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#B45F06;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="555" y="850" width="85" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="fpga_sideband" value="Sideband&#xa;Interfaces" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#B45F06;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="555" y="910" width="85" height="130" as="geometry" />
+        </mxCell>
+
+        <!-- FPGA Bottom Edge Sub-box -->
+        <mxCell id="fpga_dxn_dxp" value="DXN/DXP" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE599;strokeColor=#B45F06;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="540" y="1045" width="75" height="25" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== LEFT COLUMN (LOWER): PCIe, DRAM, OSC, JTAG ==================== -->
+        <mxCell id="pcie_edge" value="PCIe&#xa;Edge&#xa;Connector" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCCCCC;strokeColor=#333333;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="85" y="605" width="90" height="65" as="geometry" />
+        </mxCell>
+
+        <mxCell id="dram_1" value="8Gb&#xa;DRAM" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCCCCC;strokeColor=#333333;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="85" y="680" width="90" height="42" as="geometry" />
+        </mxCell>
+
+        <mxCell id="dram_2" value="8Gb&#xa;DRAM" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCCCCC;strokeColor=#333333;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="85" y="732" width="90" height="42" as="geometry" />
+        </mxCell>
+
+        <mxCell id="osc_1" value="OSC" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCCCCC;strokeColor=#333333;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="90" y="825" width="65" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="osc_2" value="OSC" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCCCCC;strokeColor=#333333;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="90" y="868" width="65" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="osc_3" value="OSC" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCCCCC;strokeColor=#333333;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="90" y="911" width="65" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="osc_4" value="OSC" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCCCCC;strokeColor=#333333;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="90" y="954" width="65" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="jtag_header" value="JTAG&#xa;Header" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCCCCC;strokeColor=#333333;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="90" y="1002" width="75" height="42" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== BOTTOM PERIPHERALS ==================== -->
+        <mxCell id="leds" value="LEDs" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCCCCC;strokeColor=#333333;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="370" y="1120" width="65" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="buttons" value="Buttons" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCCCCC;strokeColor=#333333;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="450" y="1120" width="70" height="35" as="geometry" />
+        </mxCell>
+
+        <mxCell id="thermal_sensor" value="Thermal&#xa;Diode&#xa;Sensor" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCCCCC;strokeColor=#333333;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="535" y="1120" width="85" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== NET ROUTING (EDGES) ==================== -->
+
+        <!-- 1. GPIO Expander <-> B2B Connector (GPIOs) -->
+        <mxCell id="net_gpio_exp_b2b" value="GPIOs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="445" y="65" as="sourcePoint" />
+            <mxPoint x="840" y="65" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 2. GPIO Expander -> PSUs (ENABLES) -->
+        <mxCell id="net_gpio_exp_psus" value="ENABLES" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=1;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="445" y="85" as="sourcePoint" />
+            <mxPoint x="550" y="108" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="495" y="85" />
+              <mxPoint x="495" y="108" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 3. B2B Connector -> PSUs (Bank 66, 67, 68 VREF) -->
+        <mxCell id="net_b2b_psus_vref" value="Bank 66, 67, 68&#xa;VREF" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=1;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="840" y="108" as="sourcePoint" />
+            <mxPoint x="630" y="108" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 4. I2C0 Bus Tree -->
+        <!-- Main vertical stem: I2C0 <-> GPIO Expander -->
+        <mxCell id="net_i2c0_gpio_exp" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="190" as="sourcePoint" />
+            <mxPoint x="400" y="95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- I2C0 branch right to B2B Connector -->
+        <mxCell id="net_i2c0_b2b" value="I2C" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="140" as="sourcePoint" />
+            <mxPoint x="840" y="140" as="targetPoint" />
+            <mxPoint x="-340" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- I2C0 branch left to EEPROM -->
+        <mxCell id="net_i2c0_eeprom" value="I2C" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="120" as="sourcePoint" />
+            <mxPoint x="130" y="95" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="130" y="120" />
+            </Array>
+            <mxPoint x="70" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- I2C0 branch up to Temp Sensors -->
+        <mxCell id="net_i2c0_temp" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=classic;strokeColor=#000000;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="245" y="120" as="sourcePoint" />
+            <mxPoint x="245" y="95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- I2C0 branch down to Fan CTRL -->
+        <mxCell id="net_i2c0_fan_ctrl" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=classic;strokeColor=#000000;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="120" as="sourcePoint" />
+            <mxPoint x="300" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 5. Fan CTRL <-> Fan 1 Header & Fan 2 Header (PWM) -->
+        <mxCell id="net_fan1_pwm" value="PWM" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="165" y="162" as="sourcePoint" />
+            <mxPoint x="250" y="162" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_fan2_pwm" value="PWM" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="165" y="232" as="sourcePoint" />
+            <mxPoint x="250" y="182" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="205" y="232" />
+              <mxPoint x="205" y="182" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 6. ADC (PSU Monitor) <-> SPI1 -->
+        <mxCell id="net_adc_spi1" value="SPI" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="225" y="310" as="sourcePoint" />
+            <mxPoint x="360" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 7. I2C Header <-> I2C1 -->
+        <mxCell id="net_i2c_hdr_i2c1" value="I2C" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="165" y="380" as="sourcePoint" />
+            <mxPoint x="360" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 8. RPi Right Edge Interfaces <-> B2B Connector -->
+        <mxCell id="net_uart0_b2b" value="UART" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="227" as="sourcePoint" />
+            <mxPoint x="840" y="227" as="targetPoint" />
+            <mxPoint x="-55" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_uart0_hdr" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=classic;strokeColor=#000000;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="725" y="227" as="sourcePoint" />
+            <mxPoint x="725" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_uart3_b2b" value="UART (HW Flow Ctrl)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="257" as="sourcePoint" />
+            <mxPoint x="840" y="257" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_gbe_b2b" value="GbE" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="292" as="sourcePoint" />
+            <mxPoint x="840" y="292" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_hdmi_b2b" value="HDMI 2.0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="327" as="sourcePoint" />
+            <mxPoint x="840" y="327" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_usb2_b2b" value="USB 2.0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="362" as="sourcePoint" />
+            <mxPoint x="840" y="362" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_usb3_b2b" value="2x USB 3.0&#xa;(CM5 only)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="397" as="sourcePoint" />
+            <mxPoint x="840" y="397" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 9. Inter-chip Links: RPi CM4/CM5 <-> Kintex Ultrascale FPGA -->
+        <mxCell id="net_rpi_fpga_pcie" value="PCIe&#xa;Gen2&#xa;x1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="417" y="430" as="sourcePoint" />
+            <mxPoint x="417" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_rpi_fpga_spi" value="SPI" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="507" y="430" as="sourcePoint" />
+            <mxPoint x="507" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_rpi_fpga_gpios" value="GPIOs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="595" y="430" as="sourcePoint" />
+            <mxPoint x="595" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 10. FPGA Left Column Connections -->
+        <mxCell id="net_pcie_edge_fpga" value="PCIe&#xa;Gen3&#xa;x4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="175" y="640" as="sourcePoint" />
+            <mxPoint x="360" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_dram1_fpga" value="DDR4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="175" y="701" as="sourcePoint" />
+            <mxPoint x="360" y="701" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_dram2_fpga" value="DDR4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="175" y="753" as="sourcePoint" />
+            <mxPoint x="360" y="753" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_osc1_fpga" value="DDR CLK" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=1;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="155" y="842" as="sourcePoint" />
+            <mxPoint x="360" y="842" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_osc2_fpga" value="DDR CLK" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=1;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="155" y="885" as="sourcePoint" />
+            <mxPoint x="360" y="885" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_osc3_fpga" value="Main CLK" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=1;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="155" y="928" as="sourcePoint" />
+            <mxPoint x="360" y="928" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_osc4_fpga" value="Spare CLK" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=1;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="155" y="971" as="sourcePoint" />
+            <mxPoint x="360" y="971" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_jtag_fpga" value="JTAG" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="165" y="1022" as="sourcePoint" />
+            <mxPoint x="360" y="1022" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 11. FPGA Internal Dotted Connections (DDR4 MIG IP <-> NIC <-> QSPI Interface) -->
+        <mxCell id="net_ddr4_1_nic" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=2 4;startArrow=none;endArrow=none;strokeColor=#000000;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="435" y="701" as="sourcePoint" />
+            <mxPoint x="475" y="701" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_ddr4_2_nic" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=2 4;startArrow=none;endArrow=none;strokeColor=#000000;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="435" y="753" as="sourcePoint" />
+            <mxPoint x="475" y="753" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_nic_qspi_1" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=2 4;startArrow=none;endArrow=none;strokeColor=#000000;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="701" as="sourcePoint" />
+            <mxPoint x="555" y="701" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_nic_qspi_2" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=2 4;startArrow=none;endArrow=none;strokeColor=#000000;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="753" as="sourcePoint" />
+            <mxPoint x="555" y="753" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 12. FPGA Right Column <-> B2B Connector -->
+        <mxCell id="net_pmic_b2b" value="VRM CTRL&#xa;(Up to 24)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="640" as="sourcePoint" />
+            <mxPoint x="840" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_qspi1_b2b" value="Emulated QSPI" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="701" as="sourcePoint" />
+            <mxPoint x="840" y="701" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_qspi2_b2b" value="Emulated QSPI" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="753" as="sourcePoint" />
+            <mxPoint x="840" y="753" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_gth_b2b" value="2x GTH Quad" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="872" as="sourcePoint" />
+            <mxPoint x="840" y="872" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Sideband Interfaces 6 Parallel Nets -->
+        <mxCell id="net_sb_qspi_prog" value="QSPI Programming" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="920" as="sourcePoint" />
+            <mxPoint x="840" y="920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_sb_i2c" value="I2C" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="942" as="sourcePoint" />
+            <mxPoint x="840" y="942" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_sb_i3c" value="I3C" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="964" as="sourcePoint" />
+            <mxPoint x="840" y="964" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_sb_spi" value="SPI" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="986" as="sourcePoint" />
+            <mxPoint x="840" y="986" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_sb_pmbus" value="PMBus" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="1008" as="sourcePoint" />
+            <mxPoint x="840" y="1008" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_sb_gpios" value="GPIOs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;endArrow=classic;strokeColor=#000000;fontSize=10;labelBackgroundColor=#F2F2F2;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="1030" as="sourcePoint" />
+            <mxPoint x="840" y="1030" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 13. FPGA Bottom Peripherals (LEDs, Buttons, Thermal Diode Sensor) -->
+        <mxCell id="net_fpga_leds" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=1;strokeColor=#000000;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="402" y="1070" as="sourcePoint" />
+            <mxPoint x="402" y="1120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_buttons_fpga" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=block;endFill=1;strokeColor=#000000;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="485" y="1120" as="sourcePoint" />
+            <mxPoint x="485" y="1070" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="net_dxn_thermal" value=" " style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=none;endArrow=none;strokeColor=#000000;fontSize=10;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="577" y="1070" as="sourcePoint" />
+            <mxPoint x="577" y="1120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
